@@ -15,8 +15,8 @@
 <!--Color Themes-->
 <link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="m-logo-rbg-p.png" type="image/x-icon">
+<link rel="icon" href="m-logo-rbg-p.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +24,27 @@
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+
+
+<script>
+	var isNS = (navigator.appName == "PN") ? 1 : 0;
+	if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+	function mischandler(){
+	return false;
+	}
+	function mousehandler(e){
+	var myevent = (isNS) ? e : event;
+	var eventbutton = (isNS) ? myevent.which : myevent.button;
+	if((eventbutton==2)||(eventbutton==3)) return false;
+	}
+	document.oncontextmenu = mischandler;
+	document.onmousedown = mousehandler;
+	document.onmouseup = mousehandler;
+	</script>
+
+
+
 </head>
 
 <body>
@@ -48,7 +69,7 @@
                    	<!-- Main Menu End-->
 					<div class="outer-box clearfix">
 						<ul class="option-list">
-							<li><span class="icon flaticon-phone-symbol-of-an-auricular-inside-a-circle"></span><strong>Tel:</strong> +91 880 116 3473</li>
+							<li><span class="icon flaticon-phone-symbol-of-an-auricular-inside-a-circle"></span><strong>Tel: +91 880 116 3473 </strong></li>
 							<li><a href="mailto:sales@millenniumtechnical.com"><span class="icon flaticon-calendar-2"></span><strong>Appointment</strong></a></li>
 						</ul>
 					</div>
