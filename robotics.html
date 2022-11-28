@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-<!-- not-found41:01-->
+<!-- about32:03-->
 <head>
 <meta charset="utf-8">
-<title>MILLENNIUM TECHNICAL OVERSEAS | 404</title>
+<title>MILLENNIUM TECHNICAL OVERSEAS</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 <!--Color Switcher Mockup-->
 <link href="css/color-switcher-design.css" rel="stylesheet">
@@ -26,21 +27,20 @@
 
 
 <script>
-    var isNS = (navigator.appName == "PN") ? 1 : 0;
-    if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-    function mischandler(){
-    return false;
-    }
-    function mousehandler(e){
-    var myevent = (isNS) ? e : event;
-    var eventbutton = (isNS) ? myevent.which : myevent.button;
-    if((eventbutton==2)||(eventbutton==3)) return false;
-    }
-    document.oncontextmenu = mischandler;
-    document.onmousedown = mousehandler;
-    document.onmouseup = mousehandler;
-    </script>
-
+	var isNS = (navigator.appName == "PN") ? 1 : 0;
+	if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+	function mischandler(){
+	return false;
+	}
+	function mousehandler(e){
+	var myevent = (isNS) ? e : event;
+	var eventbutton = (isNS) ? myevent.which : myevent.button;
+	if((eventbutton==2)||(eventbutton==3)) return false;
+	}
+	document.oncontextmenu = mischandler;
+	document.onmousedown = mousehandler;
+	document.onmouseup = mousehandler;
+	</script>
 
 </head>
 
@@ -218,7 +218,7 @@
 	
 	</header>
 	<!--End Main Header -->
-	
+
 	<!--FullScreen Menu-->
 	<div class="fullscreen-menu">
 		<!--Close Btn-->
@@ -228,34 +228,33 @@
 			<div class="menu-box">
 				<nav class="full-menu">
 					<ul class="navigation">
-						<li class="dropdown"><a href="indexmto.html">Home</a>
+						<li class="current"><a href="indexmto.html">Home</a>
 							
 						</li>
-						<li class="dropdown"><a href="about.html">About</a>
+						<li ><a href="about.html">About</a>
 							
 						</li>
 						<li class="dropdown"><a href="#">Services</a>
 							<ul>
-								<li><a href="services.html">Services</a></li>
-										<li><a href="services-single.html">Financial Planing</a></li>
-										<li><a href="savings-investments.html">Savings & Investments</a></li>
-										
-										<li><a href="strategic-planing.html">Strategic Planing</a></li>
+								<li><a href="services-single.html">Financial Planing</a></li>
+											<li><a href="savings-investments.html">Savings & Investments</a></li>
+											
+											<li><a href="strategic-planing.html">Strategic Planing</a></li>
 							</ul>
 						</li>
-						<li class="dropdown"><a href="#">Brands</a>
+						<li class="dropdown"><a href="#">BRANDS</a>
 							<ul>
 								<li><a href="electronics.html">Electronics</a></li>
-										<li><a href="hydraulics.html">Hydraulics</a></li>
-										<li><a href="pneumatics.html">Pneumatics</a></li>
-										<li><a href="robotics.html">Robotics</a></li>
-										<li><a href="gallery-single.html">Laboratory</a></li>
-										<li><a href="electronics.html">Instrumentation</a></li>
-										<li><a href="hydraulics.html">Tools</a></li>
-										<li><a href="pneumatics.html">Energy</a></li>
-										<li><a href="robotics.html">Mechanics</a></li>
-										<li><a href="gallery-single.html">Cables</a></li>
-										<li><a href="gallery-single.html">Bulky Goods</a></li>
+								<li><a href="hydraulics.html">Hydraulics</a></li>
+								<li><a href="pneumatics.html">Pneumatics</a></li>
+								<li><a href="robotics.html">Robotics</a></li>
+								<li><a href="gallery-single.html">Laboratory</a></li>
+								<li><a href="electronics.html">Instrumentation</a></li>
+								<li><a href="hydraulics.html">Tools</a></li>
+								<li><a href="pneumatics.html">Energy</a></li>
+								<li><a href="robotics.html">Mechanics</a></li>
+								<li><a href="gallery-single.html">Cables</a></li>
+								<li><a href="gallery-single.html">Bulky Goods</a></li>
 							</ul>
 						</li>
 						
@@ -265,11 +264,11 @@
 			</div>
 		</div>
 	</div><!--End FullScreen Menu-->
-
+	
 	<!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/2.jpg);">
+    <section class="page-title" style="background-image:url(img/brands/Robotics/robo-m-t-o.png);">
     	<div class="auto-container">
-        	<h1>404</h1>
+        	<h2>ROBOTICS</h2>
         </div>
     </section>
     
@@ -278,37 +277,95 @@
     	<div class="auto-container">
         	<ul class="bread-crumb text-center">
             	<li><a href="indexmto.html">Home</a> <span class="fa fa-angle-right"></span></li>
-                <li>404</li>
+                <li>ROBOTICS</li>
             </ul>
         </div>
     </div>
     <!--End Page Title-->
 	
-	<!--Error Section-->
-    <section class="error-section">
-    	<div class="auto-container">
-        	<div class="inner-section">
-            	<h1>404</h1>
-                <h2>OOPPS! THE PAGE YOU WERE LOOKING FOR, COULDN'T BE FOUND.</h2>
-                <div class="text">Try the search below to find matching pages:</div>
-                
-                <!-- Search -->
-                <div class="error-search-form">
-                    <form method="post" action="#">
-                        <div class="form-group">
-                            <input type="search" name="search-field" value="" placeholder="Search..." required>
-                            <button type="submit"><span class="icon fa fa-search"></span></button>
+	
+    <!--Map Info Section-->
+    <section class="map-info-section">
+    	<div class="outer-container">
+        	<div class="clearfix">
+				<!--Left Column-->
+                <div class="left-column">
+                	<!--Map Outer-->
+                    <div class="map-outer">
+                        <!--Map Canvas-->
+                        <div class="map-canvas">
+                            <img src="img/brands/Robotics/robotics.JPG">
                         </div>
-                    </form>
+                    </div>
+                </div>
+            	<!--Right Column-->
+                <div class="right-column" style="background-image:url(images/resource/image-1.jpg)">
+                	<div class="content">
+                    	<h3>Looking for products? <br> Send us your request</h3>
+                        <div class="text">We are always there for customer service if you need any assistance please contact us!</div>
+                        
+						<!-- Quote Form -->
+						<div class="quote-form">
+								
+							<!--Contact Form-->
+							<form method="" action="">
+								<div class="row clearfix">
+								
+									<div class="form-group col-lg-6 col-md-6 col-sm-12">
+										<input type="text" name="username" placeholder="How to assist you:*" required>
+									</div>
+									
+									<div class="form-group col-lg-6 col-md-6 col-sm-12">
+										<input type="text" name="phone" placeholder="Phone number:*" required>
+									</div>
+									
+									<div class="form-group col-lg-6 col-md-6 col-sm-12">
+										<input type="text" name="text" placeholder="Your name:*" required>
+									</div>
+									
+									<div class="form-group col-lg-6 col-md-6 col-sm-12">
+										<button type="submit" class="theme-btn btn-style-one">Submit request <span class="icon flaticon-share-option"></span></button>
+									</div>
+									
+								</div>
+							</form>
+						</div>
+						
+                    </div>
                 </div>
                 
             </div>
         </div>
     </section>
-    <!--End Error Section-->
+    <!--End Map Info Section-->
+
+
+
+	<!--Sponsors Section-->
+    <section class="sponsors-section" style="background-image:url(img/brands/Robotics/mto-robotics-banner.jpg);">
+    	<div class="auto-container">
+        	<div class="carousel-outer">
+                <!--Sponsors Slider-->
+                <ul class="sponsors-carousel owl-carousel owl-theme">
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/applied-robotics-200x113.webp" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/Fanuc-200x113.webp" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/Gimatic-200x113.webp" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/iai-200x113.webp" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/kuka-200x113.webp" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/roboteq-200x113.webp" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/Schunk1-200x113.webp" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/staubli-200x113.webp" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/tecnomors-200x113.webp" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="#"><img src="img/brands/Robotics/Thermo-Ramsey-200x113.webp" alt=""></a></div></li>
+                </ul>
+            </div>
+    	</div>
+    </section>
+    <!--End Sponsors Section-->
+
 	
-	 <!--Main Footer-->
-	 <div class="bottom-parallax">
+	  <!--Main Footer-->
+	  <div class="bottom-parallax">
 		<footer class="main-footer">
 				<!--Widgets Section-->
 				<div class="auto-container">
@@ -456,11 +513,14 @@
 <script src="js/appear.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/wow.js"></script>
+<script src="js/slick.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
+
+
 <script src="js/color-settings.js"></script>
 
 </body>
 
-<!-- not-found41:01-->
+
 </html>
