@@ -24,7 +24,7 @@
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
 	var isNS = (navigator.appName == "PN") ? 1 : 0;
@@ -308,7 +308,7 @@
 						<div class="quote-form">
 								
 							<!--Contact Form-->
-							<form method="" action="">
+							<form method="" action="" id="submit-form">
 								<div class="row clearfix">
 								
 									<div class="form-group col-lg-6 col-md-6 col-sm-12">
@@ -338,7 +338,25 @@
         </div>
     </section>
     <!--End Map Info Section-->
-
+	<script>
+		$("#submit-form").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+		url:"https://script.google.com/macros/s/AKfycbxyeLrjQzh7O2-fy588blcC1qcsXZSfCifdsOKzth0E73nwWBvXnf1GBDHote6p4veYLg/exec",
+		data:$("#submit-form").serialize(),
+		method:"post",
+		success:function (response){
+		alert("Our sales team will contact you shortly. Thank you!")
+		window.location.reload()
+		//window.location.href="https://google.com"
+		},
+		error:function (err){
+		alert("Something Error")
+		
+		}
+		})
+		})
+		</script>
 
 
 	<!--Sponsors Section-->
